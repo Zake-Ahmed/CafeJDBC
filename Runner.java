@@ -31,8 +31,8 @@ public class Runner {
 	System.out.println("*************************************");
 	System.out.println(newCafe.getAllDrinks());
 	// gives us a useless id reference
-	System.out.println(newCafe.queryDrink("type", "latte"));
-	System.out.println(newCafe.queryDrink("type", "latte","size", "grande"));
+	System.out.println(newCafe.queryDrink("type", "'latte'"));
+	System.out.println(newCafe.queryDrink("type", "'latte'","size", "'grande'"));
 	}
 
 

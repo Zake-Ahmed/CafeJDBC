@@ -92,7 +92,7 @@ public class Cafe {
 		try {
 			conn = db.connect();
 			stmt = conn.createStatement();
-			String query = "SELECT * FROM drinks WHERE " + heading + " = "+ "'" + value+ "'";
+			String query = "SELECT * FROM drinks WHERE " + heading + " = " + value ;
 			ResultSet results = stmt.executeQuery(query);
 
 			// While there is another row below this one, keep going
@@ -112,7 +112,7 @@ public class Cafe {
 		try {
 			conn = db.connect();
 			stmt = conn.createStatement();
-			String query = "SELECT * FROM drinks WHERE " + heading + " = "+ "'" + value+ "' AND  " + heading2 + " = "+ "'" + value2+ "'"  ;
+			String query = "SELECT * FROM drinks WHERE " + heading + " = "+  value + " AND " + heading2 + " = "+ value2  ;
 			ResultSet results = stmt.executeQuery(query);
 
 			// While there is another row below this one, keep going
